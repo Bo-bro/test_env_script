@@ -34,7 +34,7 @@ function showvar($string)
 {
 	if(isset($_SERVER[$string]))
 	{
-		echo "$string: ".rawurldecode($_SERVER[$string])."\r\n<br>";
+		echo "$string: ".rawurldecode($_SERVER[$string]);
 	}
 }
 
