@@ -1,40 +1,10 @@
-<?php
-/* PHP ProxyJudge V1.01
-*  Created by My-Proxy
-*  http://www.my-proxy.com
-*  
-*  Used for Bleach (Fourm Proxy Leecher Tester Module)
-*  http://fpl.my-proxy.com
-*
-*  It free to use and modify this script,
-*  but please remain the copyright information and links. */
-?>
-<style>
-body {
-background: #000080; font: 90% verdana, geneva, arial, helvetica, sans-serif; color: #fff;
-padding:7px 2px 2px 6px; margin:0px;
-}
-a:link, a:visited {
-	color: #fff; text-decoration: none;
-}
-a:hover {
-	color: #f60
-}
-.line {
-	margin-bottom: 2px; overflow: hidden; border-bottom: #c0d0e0 1px solid; position: relative; height: 0px
-}
-</style>
-<html>
-<head><title>My-Proxy PHP Proxyjudge 1.01</title>
-<meta name="description" content="php proxyjudge for forum proxy leecher" />
-<meta name="keywords" content="proxyjudge, proxy judge, php proxyjudge" /></head>
-<body>
+
 <?php
 function showvar($string)
 {
 	if(isset($_SERVER[$string]))
 	{
-		echo "$string: ".rawurldecode($_SERVER[$string]);
+		echo "$string: ".rawurldecode($_SERVER[$string])."\r\n<br>";
 	}
 }
 
